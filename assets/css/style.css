@@ -1,0 +1,142 @@
+/* RESET */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+  color: #E1E1E6;
+}
+
+/* STYLE */
+body,
+main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(38, 38, 38);
+  overflow: hidden;
+}
+
+.container {
+  padding: 29px;
+  background: #2A2141;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border-radius: 10px;
+  row-gap: 29px;
+  transform: scale(1.6);
+}
+
+/* Info Music */
+
+.container .boxInfo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.boxInfo img {
+  width: 84px;
+}
+
+.boxInfo .Info h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.boxInfo .Info p {
+  font-size: 19px;
+  font-weight: 400;
+  color: #E1E1E6;
+}
+
+/* Commands Control */
+.commandsControl {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 51px;
+  font-size: 28px;
+}
+
+.commandsControl>i:hover {
+  color: #C4C4CC;
+  cursor: pointer;
+}
+
+/* time */
+
+.timeline{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline > .line{
+  display: block;
+  width: 100%;
+  height: 6px;
+  border-radius: 9px;
+  background: #C4C4CC;
+  margin-bottom: 10px;
+}
+.timeline > .line > span{
+  display: block;
+  width: 90%;
+  height:6px;
+  border-radius: 9px;
+  background: #E1E1E6;
+
+}
+
+.timeline > .timer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.timeline > .timer > p{
+  color: #C4C4CC;
+}
+
+/* Responsive */
+@media (max-width:600px) {
+  .container{
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width:450px) {
+  .container {
+    padding:0 60px;
+    width: 100%;
+    height: 100%;
+    justify-content: center;    
+  }
+  .container .boxInfo{
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 29px;
+  }
+  .boxInfo img{
+    width: 100%;
+  }
+  
+  .commandsControl {
+    font-size: 18px;
+  }
+
+  .timeline{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width:300px) {
+  .container{
+    padding: 0 39px;
+  }
+}
