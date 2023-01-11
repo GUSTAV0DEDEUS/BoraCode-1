@@ -15,7 +15,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(38, 38, 38);
+  background: #2A2141;
   overflow: hidden;
 }
 
